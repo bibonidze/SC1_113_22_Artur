@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div.day {
+            width: 200px; padding: 1px ; background-color:grey; border: solid black 1px; border-radius: 1px; position: relative; cursor: pointer;  display: inline-block;
+            }
+        div.menu2 {
+            opacity: 0;
+            transition: 1s;
+            position: absolute;
+            }
+        div.menu2 > div {
+            width: 200px; background-color:grey; border: solid black 1px; cursor: pointer; border-radius: 1px; 
+            }
+            div.day:hover{
+            background-color: rgb(185, 52, 52);
+         }
+
+        .day:hover .menu2{
+            opacity:1;
+            transition: 1s;
+            display: block;
+        }
+             
+        @media all and (max-width: 1700px) {
+            div.day {
+           background-color:grey; background-color:grey; border: solid black 1px; position: relative; cursor: pointer;  display: block;
+            }
+            div:hover div.menu2 {
+                display: block; position: absolute; left: 100%; top: 1px; 
+             }
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+        <div class="day">Понедельник</div>
+        <div class="day">Вторник</div>
+        <div class="day">Среда
+            <div class='menu2'>
+                <div>завтрак</div>
+                <div>обед</div>
+                <div>ужин</div>
+            </div>
+        </div>
+        <div class="day">Четверг</div>
+        <div class="day">Пятница</div>
+        <div class="day">Суббота</div>
+        <div class="day">Воскресенье</div>
+    
+</body>
+</html>

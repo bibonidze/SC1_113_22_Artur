@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab{
+            width: 600px; border: solid  black 1px; padding-left: 1%;
+            -webkit-border-radius: 0px 20px 0px 20px;
+            -moz-border-radius: 0px 20px 0px 20px;
+            border-radius: 0px 20px 0px 20px;
+        }
+
+        a.list1:hover::after{
+            content: url(word.jpg);
+        }
+        a.list2:hover::after {
+            content: url(pdf.png);
+        }
+        a.list3:hover::after {
+            content: url(arc.gif);
+        }
+        a[class='word']::after {
+            content: url(word.jpg);
+        }
+        a[class='pdf']::after {
+            content: url(pdf.png);
+        }
+        a[class='arc']::after {
+            content: url(arc.gif);
+        }
+    </style>
+</head>
+<body>
+    <h1>Формат файлов</h1>
+    <div class="tab">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+            ( от англ. <img src="doc.png"><a href="#"> document </a> ) -Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea. Ut, 
+             nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus!
+             <br>
+             <a href="#" class="word">Документ MS Word</a>
+        </p>
+    </div>
+    <div class="tab">
+        <p>( от англ. <img src="doc.png"><a href="#"> PDF </a> ) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea.
+              Ut, nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus! 
+             <br>
+             <a href="#" class="pdf">Документ PDF</a>
+        </p>
+    </div>
+    <div class="tab">
+        <p> ZIP - ( от англ. <img src="doc.png"><a href="#"> .zip </a> )Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea. 
+            Ut, nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus!
+            <br>
+            <a href="#" class="arc">Архив</a>
+        </p>
+    </div>
+    <h1>Это список файлов</h1>
+    <div>
+        <img src="list.jpg"><a href="#" class="list1"> Документ MS Word </a> <br>
+        <img src="list.jpg"><a href="#" class="list2"> Документ PDF </a> <br>
+        <img src="list.jpg"><a href="#" class="list3"> Архив </a> 
+    </div>
+</body>
+</html>
